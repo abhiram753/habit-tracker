@@ -66,7 +66,7 @@ function App() {
 
   const handleLogin = async (email, password) => {
     try {
-      const response = await axios.post('https://habit-tracker-backend.onrender.com/api/auth/login', {
+      const response = await axios.post('https://habit-tracker-backend-56ek.onrender.com/api/auth/login', {
         email,
         password,
       });
