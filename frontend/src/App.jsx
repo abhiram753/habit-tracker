@@ -10,7 +10,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const api = axios.create({
-    baseURL: 'http://localhost:8000/api',
+    baseURL: 'https://habit-tracker-backend-56ek.onrender.com',
   });
 
   api.interceptors.request.use((config) => {
@@ -66,7 +66,7 @@ function App() {
 
   const handleLogin = async (email, password) => {
     try {
-      const response = await axios.post('http://localhost:8000/api/auth/login', {
+      const response = await axios.post('https://habit-tracker-backend.onrender.com/api/auth/login', {
         email,
         password,
       });
